@@ -1,7 +1,7 @@
 name: e_commerce_app
 description: "A new Flutter package project."
 version: 0.0.1
-homepage:
+homepage: "www.google.com"
 
 environment:
   sdk: ^3.5.1
@@ -21,6 +21,8 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
+
+  uses-material-design: true
 
   # To add assets to your package, add an assets section, like this:
   # assets:
