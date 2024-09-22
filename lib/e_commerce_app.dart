@@ -1,5 +1,7 @@
 library e_commerce_app;
 
+import 'package:e_commerce_app/core/configs/theme/app_theme.dart';
+import 'package:e_commerce_app/presentation/splash/pages/splash_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -13,10 +15,10 @@ class ECommerceApp extends StatefulWidget {
 class _ECommerceAppState extends State<ECommerceApp> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Text("E commerce app"),
-      ),
+    return MaterialApp(
+      theme: AppTheme.appTheme,
+      debugShowCheckedModeBanner: false,
+      home: SplashPage(),
     );
   }
 }
