@@ -2,6 +2,7 @@ import 'package:e_commerce_app/common/helper/navigator/app_navigator.dart';
 import 'package:e_commerce_app/common/widget/appbar/app_bar.dart';
 import 'package:e_commerce_app/common/widget/button/base_app_buttton.dart';
 import 'package:e_commerce_app/presentation/auth/page/forgot_password.dart';
+import 'package:e_commerce_app/presentation/auth/page/gender_age_selection_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
@@ -22,7 +23,7 @@ class EnterPasswordPage extends StatelessWidget {
             const SizedBox(height: 20),
             _passwordText(context),
             const SizedBox(height: 20),
-            _continueButton(),
+            _continueButton(context),
             const SizedBox(height: 20),
             _forgetPassword(context),
           ],
@@ -49,9 +50,12 @@ class EnterPasswordPage extends StatelessWidget {
     );
   }
 
-  Widget _continueButton() {
+  Widget _continueButton(BuildContext context) {
     return BaseAppButton(
-      onPressed: () {},
+      onPressed: () {
+        // AppNavigator.push(
+        //     context, GenderAgeSelectionPage(userCreationReq: userCreationReq));
+      },
       title: "Continue",
     );
   }
